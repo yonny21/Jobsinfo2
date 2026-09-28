@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLENNFORT INTERNATIONAL LLC - 4ተኛ ዙር ስራዎች</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #10b981;
+            --accent-hover: #059669;
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #38bdf8, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .id-badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 10px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .jobs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .job-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #38bdf8;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .job-title {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #f1f5f9;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .salary {
+            color: #34d399;
+            font-weight: bold;
+        }
+
+        .job-details {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .note {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .cta-container {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            width: 100%;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 16px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            70% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 1.3rem;
+            }
+            .job-title {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>GLENNFORT INTERNATIONAL LLC</h1>
+            <h2>4ተኛ ዙር የአለምአቀፍ ስራዎች ምዝገባ</h2>
+            <div class="id-badge">በናሽናል ID (National ID) ብቻ</div>
+        </header>
+
+        <div class="jobs-list">
+            <!-- Job 1 -->
+            <div class="job-card">
+                <div class="job-title">
+                    <span>1. የ እርሻ ሰራተኛ</span>
+                    <span class="salary">€5,200</span>
+                </div>
+                <div class="job-details">
+                    <span>📍 ቤልፋስት, አየርላንድ</span>
+                    <span>📚 8ኛ እና ከዛ በላይ</span>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card">
+                <div class="job-title">
+                    <span>2. የመጋዘን ስራዎች</span>
+                    <span class="salary">€3,200</span>
+                </div>
+                <div class="job-details">
+                    <span>📍 ቤልፋስት, አየርላንድ</span>
+                    <span>📚 10ኛ እና ከዛ በላይ</span>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card">
+                <div class="job-title">
+                    <span>3. አሳ ማሸግ</span>
+                    <span class="salary">€3,200</span>
+                </div>
+                <div class="job-details">
+                    <span>📍 ላቲቪያ</span>
+                    <span>📚 8ኛ እና ከዛ በላይ</span>
+                </div>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="job-card">
+                <div class="job-title">
+                    <span>4. ሆቴል አስተናጋጅ</span>
+                    <span class="salary">€2,400</span>
+                </div>
+                <div class="job-details">
+                    <span>📍 ላቲቪያ</span>
+                    <span>📚 10ኛ እና ከዛ በላይ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            ⚠️ <strong>ማሳሰቢያ:</strong> ማንኛውም በ4ተኛ ዙር የGLENNFORT INTERNATIONAL LLC ዓለምአቀፍ ሥራ ተጠቃሚ ለመሆን የመከታተያ ቁጥር መያዝዎን ያረጋግጡ!
+        </div>
+
+        <div class="cta-container">
+            <a href="http://addismobileapps.com/sms.html" class="cta-button" target="_blank">
+                የመከታተያ ቁጥር ያግኙ 🚀
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
